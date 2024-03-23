@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JavaSoap.iml" filepath="$PROJECT_DIR$/JavaSoap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/pythonClient.iml" filepath="$PROJECT_DIR$/.idea/pythonClient.iml" />
     </modules>
   </component>
 </project>

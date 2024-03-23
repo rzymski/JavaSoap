@@ -9,23 +9,23 @@ W cz2 w celu wdrożenia aplikacji na serwer glassfish wykorzystano Inteliji prem
 Integracja z Maven:
  - Kliknięcie prawym na nazwę projektu -> Add Framework support -> Maven -> ok
 
-Po utworzeniu pliku pom.xml z <packaging>war</packaging>:
+Po utworzeniu pliku pom.xml z &lt;packaging&gt;war&lt;/packaging&gt;:
  - Maven -> Lifecycle -> clean i potem package
 
 Stworzenie konfiguracji glassfisha:
- - Edit Configurations -> + -> Glassfish Server Local
- - JRE 1.8
- - Application server: GlassFish 4.1.0
- - Server Domain: domain1
- - Username: admin
- - Deployment -> + -> External Source i wybieramy z target/JavaSoap.war albo artifact JavaSoap:war -> ok -> Run
+ - Edit Configurations -> + -> Glassfish Server Local  
+   Następnie proponowana konfiguracja:
+   - JRE 1.8
+   - Application server: GlassFish 4.1.0
+   - Server Domain: domain1
+   - Username: admin
+   - Deployment -> + -> External Source i wybieramy z target/JavaSoap.war albo artifact JavaSoap:war -> ok -> Run
 
 Można sprawdzić działanie serwera w:
 - http://localhost:8080/JavaSoap/HelloWorldImplService
 
-WSDL:
+WSDL:  
 - http://localhost:8080/JavaSoap/HelloWorldImplService?WSDL
 
-Tester Glassfisha:
+Tester Glassfisha:  
 - http://localhost:8080/JavaSoap/HelloWorldImplService?Tester
-

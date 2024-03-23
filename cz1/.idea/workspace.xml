@@ -1,89 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8dca3bf-499e-4e8a-bf6f-8ca8a4f8cdc6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/tcpmon.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cz1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soap/lavasoft/GeoIPService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soap/lavasoft/GeoIPServiceSoap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soap/lavasoft/GeoIpServiceClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soap/lavasoft/GetCountryISO2ByName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soap/lavasoft/GetCountryISO2ByNameResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soap/lavasoft/GetCountryNameByISO2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soap/lavasoft/GetCountryNameByISO2Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soap/lavasoft/GetIpLocation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soap/lavasoft/GetIpLocation20.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soap/lavasoft/GetIpLocation20Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soap/lavasoft/GetIpLocationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soap/lavasoft/GetLocation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soap/lavasoft/GetLocationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soap/lavasoft/ObjectFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soap/lavasoft/package-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soap/webserviceclient/GeoIPServiceSoap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/soap/webserviceclient/GeoIpServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaSoap.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dzialaScreen.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tcpmon.jar" beforeDir="false" />
+    <list default="true" id="756c8172-3d2f-42cb-ae97-3c321002d24c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../cz2/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/tcpmon.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/soap.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/src/main/java/soap/HelloWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/src/main/java/soap/HelloWorldImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/src/main/java/soap/HelloWorldPublisher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/src/main/java/soap/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/JavaSoap.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/JavaSoap/WEB-INF/classes/soap/HelloWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/JavaSoap/WEB-INF/classes/soap/HelloWorldImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/JavaSoap/WEB-INF/classes/soap/HelloWorldPublisher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/JavaSoap/WEB-INF/classes/soap/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/classes/soap/HelloWorld.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/classes/soap/HelloWorldImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/classes/soap/HelloWorldPublisher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/classes/soap/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="2e3q2ZLmXNMxEg1iRMLYsOG0dCr" />
+  <component name="ProjectId" id="2e6QjfkP759Lttk2EV84NhEsAd1" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/programowanie/java/rsi/JavaSoap/cz1&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;application.passwordSafe&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/programowanie/java/rsi/JavaSoap/cz1",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "application.passwordSafe",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\programowanie\java\rsi\JavaSoap\cz1\src\soap" />
-    </key>
-  </component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e8dca3bf-499e-4e8a-bf6f-8ca8a4f8cdc6" name="Changes" comment="" />
-      <created>1711143402456</created>
+      <changelist id="756c8172-3d2f-42cb-ae97-3c321002d24c" name="Changes" comment="" />
+      <created>1711222684089</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1711143402456</updated>
-      <workItem from="1711143403480" duration="2493000" />
-      <workItem from="1711146048184" duration="10000" />
-      <workItem from="1711146118438" duration="3275000" />
+      <updated>1711222684089</updated>
+      <workItem from="1711222685090" duration="25000" />
     </task>
     <servers />
   </component>

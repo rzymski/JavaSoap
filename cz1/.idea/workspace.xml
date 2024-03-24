@@ -1,39 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="756c8172-3d2f-42cb-ae97-3c321002d24c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../cz2/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/tcpmon.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="335bc7bc-ad3b-4904-a30a-e5cdd3d48761" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/soap.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/src/main/java/soap/HelloWorld.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/src/main/java/soap/HelloWorldImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/src/main/java/soap/HelloWorldPublisher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/src/main/java/soap/Product.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/JavaSoap.war" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/JavaSoap/WEB-INF/classes/soap/HelloWorld.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/JavaSoap/WEB-INF/classes/soap/HelloWorldImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/JavaSoap/WEB-INF/classes/soap/HelloWorldPublisher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/JavaSoap/WEB-INF/classes/soap/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/classes/soap/HelloWorld.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/classes/soap/HelloWorldImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/classes/soap/HelloWorldPublisher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/classes/soap/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cz2/soap/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cz1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonClient/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonClient/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonClient/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonClient/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonClient/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pythonClient/.idea/pythonClient.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +22,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="2e6QjfkP759Lttk2EV84NhEsAd1" />
+  <component name="ProjectId" id="2e8rPDjqoIHpjT3K3RnVN6QK0Ej" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -53,7 +32,6 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "D:/programowanie/java/rsi/JavaSoap/cz1",
-    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "application.passwordSafe",
     "vue.rearranger.settings.migration": "true"
   }
@@ -61,12 +39,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="756c8172-3d2f-42cb-ae97-3c321002d24c" name="Changes" comment="" />
-      <created>1711222684089</created>
+      <changelist id="335bc7bc-ad3b-4904-a30a-e5cdd3d48761" name="Changes" comment="" />
+      <created>1711297019406</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1711222684089</updated>
-      <workItem from="1711222685090" duration="25000" />
+      <updated>1711297019406</updated>
+      <workItem from="1711297020393" duration="36000" />
     </task>
     <servers />
   </component>

@@ -7,24 +7,24 @@ W cz2 znajdują się zadania z JAXWScz2.pdf (z wyjątkime 2)
 
 W cz2 w celu wdrożenia aplikacji na serwer glassfish wykorzystano Inteliji premium.  
 Integracja z Maven:
- - Kliknięcie prawym na nazwę projektu -> Add Framework support -> Maven -> ok
+ - Kliknięcie prawym na nazwę projektu -> Add Framework support -> Maven -> ok  
 ![Alt text](screens/addMaven.jpg?raw=true "Add Maven")
 
 Po utworzeniu pliku pom.xml z &lt;packaging&gt;war&lt;/packaging&gt;:
  - Maven -> Lifecycle -> clean i potem package  
-![Alt text](screens/mavenLifecycle.jpg?raw=true "Maven Lifecycle")
+![Alt text](screens/mavenLifecycle.jpg?raw=true "Maven Lifecycle")  
 
 Stworzenie konfiguracji glassfisha:
  - Edit Configurations -> + -> Glassfish Server Local  
-   ![Alt text](screens/editConfiguration.jpg?raw=true "Konfiguracja cz.1")
-   ![Alt text](screens/editConfiguration2.jpg?raw=true "Konfiguracja cz.2")
+   ![Alt text](screens/editConfiguration.jpg?raw=true "Konfiguracja cz.1")  
+   ![Alt text](screens/editConfiguration2.jpg?raw=true "Konfiguracja cz.2")  
    Następnie proponowana konfiguracja:
    - JRE 1.8
    - Application server: GlassFish 4.1.0
    - Server Domain: domain1
    - Username: admin
-   - Deployment -> + -> External Source i wybieramy z target/JavaSoap.war albo artifact JavaSoap:war -> ok -> Run
-  ![Alt text](screens/editConfiguration3.jpg?raw=true "Konfiguracja cz.3")
+   - Deployment -> + -> External Source i wybieramy z target/JavaSoap.war albo artifact JavaSoap:war -> ok -> Run  
+  ![Alt text](screens/editConfiguration3.jpg?raw=true "Konfiguracja cz.3")  
   ![Alt text](screens/editConfiguration4.jpg?raw=true "Konfiguracja cz.4")
 
 Można sprawdzić działanie serwera w:
@@ -36,8 +36,12 @@ WSDL:
 Tester Glassfisha:  
 - http://localhost:8080/JavaSoap/HelloWorldImplService?Tester
 
+Wynik zadania 1  
 ![Alt text](screens/cz2zad1Wynik.png?raw=true "Wynik zad 1 z cz.2")
 
+Wynik zadania 2  
 ![Alt text](screens/cz2zad2Wynik.png?raw=true "Wynik zad 2 z cz.2")
+
+Wynik zadania 6  
 ![Alt text](screens/cz2zad6Wynik.png?raw=true "Wynik zad 6 z cz.2")
 

@@ -36,12 +36,21 @@ WSDL:
 Tester Glassfisha:  
 - http://localhost:8080/JavaSoap/HelloWorldImplService?Tester
 
-Wynik zadania 1  
+Wynik zadania 5 w cz.1  
+![Alt text](screens/tcpMonitor.jpg?raw=true "Wynik zad 5 z cz.1")  
+
+Wynik zadania 1 w cz.2  
 ![Alt text](screens/cz2zad1Wynik.png?raw=true "Wynik zad 1 z cz.2")
 
-Wynik zadania 2  
+Wynik zadania 2 w cz.2  
 ![Alt text](screens/cz2zad2Wynik.png?raw=true "Wynik zad 2 z cz.2")
 
-Wynik zadania 6  
+Konfiguracja zadania 3 w cz.2  
+![Alt text](screens/cz2zad3Konfiguracja1.jpg?raw=true "Konfiguracja1 zad 3 z cz.2")  
+![Alt text](screens/cz2zad3Konfiguracja2.png?raw=true "Konfiguracja2 zad 3 z cz.2")  
+Wynik zadania 3 w cz.2  
+![Alt text](screens/cz2zad3Wynik.png?raw=true "Wynik zad 3 z cz.2")  
+
+Wynik zadania 6 w cz.2  
 ![Alt text](screens/cz2zad6Wynik.png?raw=true "Wynik zad 6 z cz.2")
 

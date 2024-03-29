@@ -26,6 +26,39 @@ public interface Server {
 
     /**
      * 
+     * @return
+     *     returns java.lang.String
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "getServerName", targetNamespace = "http://service.soap/", className = "soap.service.GetServerName")
+    @ResponseWrapper(localName = "getServerNameResponse", targetNamespace = "http://service.soap/", className = "soap.service.GetServerNameResponse")
+    @Action(input = "http://service.soap/Server/getServerNameRequest", output = "http://service.soap/Server/getServerNameResponse")
+    public String getServerName();
+
+    /**
+     * 
+     * @param arg2
+     * @param arg1
+     * @param arg0
+     * @return
+     *     returns java.lang.Double
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "calculator", targetNamespace = "http://service.soap/", className = "soap.service.Calculator")
+    @ResponseWrapper(localName = "calculatorResponse", targetNamespace = "http://service.soap/", className = "soap.service.CalculatorResponse")
+    @Action(input = "http://service.soap/Server/calculatorRequest", output = "http://service.soap/Server/calculatorResponse")
+    public Double calculator(
+        @WebParam(name = "arg0", targetNamespace = "")
+        String arg0,
+        @WebParam(name = "arg1", targetNamespace = "")
+        Double arg1,
+        @WebParam(name = "arg2", targetNamespace = "")
+        Double arg2);
+
+    /**
+     * 
      * @param arg0
      * @return
      *     returns java.lang.String
@@ -38,38 +71,5 @@ public interface Server {
     public String getReverseMessage(
         @WebParam(name = "arg0", targetNamespace = "")
         String arg0);
-
-    /**
-     * 
-     * @param arg2
-     * @param arg1
-     * @param arg0
-     * @return
-     *     returns java.lang.String
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "calculator", targetNamespace = "http://service.soap/", className = "soap.service.Calculator")
-    @ResponseWrapper(localName = "calculatorResponse", targetNamespace = "http://service.soap/", className = "soap.service.CalculatorResponse")
-    @Action(input = "http://service.soap/Server/calculatorRequest", output = "http://service.soap/Server/calculatorResponse")
-    public String calculator(
-        @WebParam(name = "arg0", targetNamespace = "")
-        String arg0,
-        @WebParam(name = "arg1", targetNamespace = "")
-        String arg1,
-        @WebParam(name = "arg2", targetNamespace = "")
-        String arg2);
-
-    /**
-     * 
-     * @return
-     *     returns java.lang.String
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "getServerName", targetNamespace = "http://service.soap/", className = "soap.service.GetServerName")
-    @ResponseWrapper(localName = "getServerNameResponse", targetNamespace = "http://service.soap/", className = "soap.service.GetServerNameResponse")
-    @Action(input = "http://service.soap/Server/getServerNameRequest", output = "http://service.soap/Server/getServerNameResponse")
-    public String getServerName();
 
 }

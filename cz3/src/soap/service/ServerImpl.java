@@ -1,6 +1,5 @@
 package soap.service;
 
-
 import javax.annotation.Resource;
 import javax.jws.HandlerChain;
 import javax.jws.WebService;
@@ -40,44 +39,42 @@ public class ServerImpl implements Server {
     }
 
     @Override
-    public String calculator(String operation, String firstValue, String secondValue) {
+    public Double calculator(String operation, Double firstValue, Double secondValue) throws IllegalArgumentException, ArithmeticException, SecurityException {
         if(authorization()){ System.out.println("Witaj! Zalogowano się prawidłowo."); }
-        else { System.out.println("Błędne dane logowania."); return "Nie udało się zalogować, a kalkulator jest tylko dla zalogowanych użytkowników."; }
-
-        try {
-            double first = Double.parseDouble(firstValue);
-            double second = Double.parseDouble(secondValue);
-            if (Double.isInfinite(first) || Double.isInfinite(second) || Double.isNaN(first) || Double.isNaN(second)) {
-                throw new ArithmeticException("Invalid input: Infinite or NaN values are not allowed.");
-            }
-            double result;
-            switch (operation) {
-                case "+":
-                    result = first + second;
-                    break;
-                case "-":
-                    result = first - second;
-                    break;
-                case "*":
-                    result = first * second;
-                    break;
-                case "/":
-                    if (second == 0) {
-                        throw new ArithmeticException("Division by zero is not allowed.");
-                    }
-                    result = first / second;
-                    break;
-                default:
-                    throw new IllegalArgumentException("Unsupported operation: " + operation);
-            }
-            System.out.println("Kalkulator wykonuje operacje dla" + first + " " + operation + " " + second +". Wynik: " + result + ".");
-            return String.valueOf(result);
-        } catch (NumberFormatException e) {
-            return "Invalid input: Please provide valid numeric values.";
-        } catch (ArithmeticException e) {
-            return "Arithmetic error: " + e.getMessage();
-        } catch (Exception e) {
-            return "Unexpected error: " + e.getMessage();
+        else {
+            System.out.println("Błędne dane. Nie udało się zalogować. ");
+            throw new SecurityException("Nieudana autoryzacja: błędne dane logowania");
         }
+
+        Double result;
+        if(operation == null || firstValue == null || secondValue == null){
+            throw new NullPointerException("One of the arguments is null. Operation = " + operation + " first value = " + firstValue + " second value = " + secondValue);
+        }
+        if (!operation.matches("[+\\-*/]")) {
+            throw new IllegalArgumentException("Unsupported operation: " + operation);
+        }
+        if (Double.isInfinite(firstValue) || Double.isInfinite(secondValue) || Double.isNaN(firstValue) || Double.isNaN(secondValue)) {
+            throw new ArithmeticException("Invalid input: Infinite or NaN values are not allowed.");
+        }
+        switch (operation) {
+            case "+":
+                result = firstValue + secondValue;
+                break;
+            case "-":
+                result = firstValue - secondValue;
+                break;
+            case "*":
+                result = firstValue * secondValue;
+                break;
+            case "/":
+                if (secondValue == 0) {
+                    throw new ArithmeticException("Division by zero is not allowed.");
+                }
+                result = firstValue / secondValue;
+                break;
+            default:
+                throw new IllegalArgumentException("Unsupported operation: " + operation);
+        }
+        return result;
     }
 }

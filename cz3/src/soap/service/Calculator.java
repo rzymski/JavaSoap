@@ -17,8 +17,8 @@ import javax.xml.bind.annotation.XmlType;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
  *         &lt;element name="arg0" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="arg1" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="arg2" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="arg1" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0"/>
+ *         &lt;element name="arg2" type="{http://www.w3.org/2001/XMLSchema}double" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -36,8 +36,8 @@ import javax.xml.bind.annotation.XmlType;
 public class Calculator {
 
     protected String arg0;
-    protected String arg1;
-    protected String arg2;
+    protected Double arg1;
+    protected Double arg2;
 
     /**
      * Gets the value of the arg0 property.
@@ -68,10 +68,10 @@ public class Calculator {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link Double }
      *     
      */
-    public String getArg1() {
+    public Double getArg1() {
         return arg1;
     }
 
@@ -80,10 +80,10 @@ public class Calculator {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link Double }
      *     
      */
-    public void setArg1(String value) {
+    public void setArg1(Double value) {
         this.arg1 = value;
     }
 
@@ -92,10 +92,10 @@ public class Calculator {
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link Double }
      *     
      */
-    public String getArg2() {
+    public Double getArg2() {
         return arg2;
     }
 
@@ -104,10 +104,10 @@ public class Calculator {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link Double }
      *     
      */
-    public void setArg2(String value) {
+    public void setArg2(Double value) {
         this.arg2 = value;
     }
 

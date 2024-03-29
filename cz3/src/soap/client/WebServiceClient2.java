@@ -45,7 +45,11 @@ public class WebServiceClient2 {
 //        headers.put("Password", Collections.singletonList("Trudne123!"));
 //        req_ctx.put(MessageContext.HTTP_REQUEST_HEADERS, headers);
 //        // Call the service method
-//        System.out.println(server.calculator("+", "10", "5"));
+//        try{
+//            System.out.println(server.calculator("/", 10.1, 3.2));
+//        } catch (Exception e) {
+//            System.out.println("Wystąpił wyjątek: " + e.getMessage());
+//        }
 
         // Alternatywna wersja
 
@@ -61,7 +65,10 @@ public class WebServiceClient2 {
         headers.put("Username", Collections.singletonList("pizza"));
         headers.put("Password", Collections.singletonList("Trudne123!"));
         req_ctx.put(MessageContext.HTTP_REQUEST_HEADERS, headers);
-
-        System.out.println(server.calculator("/", "20", "3"));
+        try {
+            System.out.println(server.calculator("?", 20.0, 3.0));
+        } catch (Exception e) {
+            System.out.println("Wystąpił wyjątek: " + e.getMessage());
+        }
     }
 }

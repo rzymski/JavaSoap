@@ -42,6 +42,7 @@ public class MacAddressInjectHandler implements SOAPHandler<SOAPMessageContext>{
                 soapMsg.saveChanges();
                 //tracking
                 soapMsg.writeTo(System.out);
+                System.out.println();
             }catch(SOAPException e){
                 System.err.println(e);
             }catch(IOException e){

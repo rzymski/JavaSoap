@@ -28,12 +28,30 @@ public class ObjectFactory {
     private final static QName _GetReverseMessage_QNAME = new QName("http://service.soap/", "getReverseMessage");
     private final static QName _GetServerName_QNAME = new QName("http://service.soap/", "getServerName");
     private final static QName _GetServerNameResponse_QNAME = new QName("http://service.soap/", "getServerNameResponse");
+    private final static QName _Calculator_QNAME = new QName("http://service.soap/", "calculator");
+    private final static QName _CalculatorResponse_QNAME = new QName("http://service.soap/", "calculatorResponse");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: soap.service
      * 
      */
     public ObjectFactory() {
+    }
+
+    /**
+     * Create an instance of {@link Calculator }
+     * 
+     */
+    public Calculator createCalculator() {
+        return new Calculator();
+    }
+
+    /**
+     * Create an instance of {@link CalculatorResponse }
+     * 
+     */
+    public CalculatorResponse createCalculatorResponse() {
+        return new CalculatorResponse();
     }
 
     /**
@@ -102,6 +120,24 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://service.soap/", name = "getServerNameResponse")
     public JAXBElement<GetServerNameResponse> createGetServerNameResponse(GetServerNameResponse value) {
         return new JAXBElement<GetServerNameResponse>(_GetServerNameResponse_QNAME, GetServerNameResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Calculator }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://service.soap/", name = "calculator")
+    public JAXBElement<Calculator> createCalculator(Calculator value) {
+        return new JAXBElement<Calculator>(_Calculator_QNAME, Calculator.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link CalculatorResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://service.soap/", name = "calculatorResponse")
+    public JAXBElement<CalculatorResponse> createCalculatorResponse(CalculatorResponse value) {
+        return new JAXBElement<CalculatorResponse>(_CalculatorResponse_QNAME, CalculatorResponse.class, null, value);
     }
 
 }

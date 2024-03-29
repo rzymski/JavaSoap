@@ -14,7 +14,7 @@ except Exception as e:
 try:
     response = client.service.getProducts()
     if response:
-        # print(response)
+        print(response)
         print("Lista produktów:")
         for product in response:
             print("- Nazwa:", product['nazwa'])

@@ -46,7 +46,7 @@ public class WebServiceClient2 {
 //        req_ctx.put(MessageContext.HTTP_REQUEST_HEADERS, headers);
 //        // Call the service method
 //        try{
-//            System.out.println(server.calculator("*", 3.14, 2.71));
+//            System.out.println(server.calculator("*", 3.15, 2.71));
 //        } catch (Exception e) {
 //            System.out.println("Wystąpił wyjątek: " + e.getMessage());
 //        }
@@ -66,7 +66,7 @@ public class WebServiceClient2 {
         headers.put("Password", Collections.singletonList("Trudne123!"));
         req_ctx.put(MessageContext.HTTP_REQUEST_HEADERS, headers);
         try {
-            System.out.println(server.calculator("*", 3.14, 2.71));
+            System.out.println(server.calculator("*", 3.15, 2.71));
         } catch (Exception e) {
             System.out.println("Wystąpił wyjątek: " + e.getMessage());
         }

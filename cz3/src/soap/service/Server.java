@@ -55,7 +55,7 @@ public interface Server {
         @WebParam(name = "arg1", targetNamespace = "")
         Double arg1,
         @WebParam(name = "arg2", targetNamespace = "")
-        Double arg2);
+        Double arg2) throws SecretException;
 
     /**
      * 

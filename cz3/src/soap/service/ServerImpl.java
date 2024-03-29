@@ -39,15 +39,16 @@ public class ServerImpl implements Server {
     }
 
     @Override
-    public Double calculator(String operation, Double firstValue, Double secondValue) throws IllegalArgumentException, ArithmeticException, SecurityException {
-        if(authorization()){ System.out.println("Witaj! Zalogowano się prawidłowo."); }
+    public Double calculator(String operation, Double firstValue, Double secondValue) throws IllegalArgumentException, ArithmeticException, SecurityException, SecretException {
+        System.out.println("DZIALA dla: " + operation + " " + firstValue + " " + secondValue);
+        if (authorization()){ System.out.println("Witaj! Zalogowano się prawidłowo."); }
         else {
             System.out.println("Błędne dane. Nie udało się zalogować. ");
-            throw new SecurityException("Nieudana autoryzacja: błędne dane logowania");
+            throw new SecurityException("Authorization failed: invalid login credentials");
         }
 
         Double result;
-        if(operation == null || firstValue == null || secondValue == null){
+        if (operation == null || firstValue == null || secondValue == null){
             throw new NullPointerException("One of the arguments is null. Operation = " + operation + " first value = " + firstValue + " second value = " + secondValue);
         }
         if (!operation.matches("[+\\-*/]")) {
@@ -55,6 +56,10 @@ public class ServerImpl implements Server {
         }
         if (Double.isInfinite(firstValue) || Double.isInfinite(secondValue) || Double.isNaN(firstValue) || Double.isNaN(secondValue)) {
             throw new ArithmeticException("Invalid input: Infinite or NaN values are not allowed.");
+        }
+        if (operation.equals("*") && firstValue.equals(3.14) && secondValue.equals(2.71)) {
+            System.out.println("ODKRYWCA");
+            throw new SecretException("Congratulation you discovered secret exception.");
         }
         switch (operation) {
             case "+":

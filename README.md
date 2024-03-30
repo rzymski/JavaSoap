@@ -4,6 +4,7 @@ ___
 # JavaSoap
 W cz1 znajdują się zadania z JAXWS.pdf oraz 2 zadanie z JAXWScz2.pdf w folderze lavasoft  
 W cz2 znajdują się zadania z JAXWScz2.pdf (z wyjątkime 2)  
+W cz3 znajdują się zadania z JAXWScz3.pdf
 
 W cz2 w celu wdrożenia aplikacji na serwer glassfish wykorzystano Inteliji premium.  
 Integracja z Maven:
@@ -27,17 +28,28 @@ Stworzenie konfiguracji glassfisha:
   ![Alt text](screens/editConfiguration3.jpg?raw=true "Konfiguracja cz.3")  
   ![Alt text](screens/editConfiguration4.jpg?raw=true "Konfiguracja cz.4")
 
-Można sprawdzić działanie serwera w:
-- http://localhost:8080/JavaSoap/HelloWorldImplService
 
-WSDL:  
-- http://localhost:8080/JavaSoap/HelloWorldImplService?WSDL
-
-Tester Glassfisha:  
-- http://localhost:8080/JavaSoap/HelloWorldImplService?Tester
+Część 1
+======  
+W części 1 WSDL:
+- http://localhost:9999/ws/hello?WSDL
 
 Wynik zadania 5 w cz.1  
 ![Alt text](screens/tcpMonitor.jpg?raw=true "Wynik zad 5 z cz.1")  
+
+
+Część 2
+======
+W części 2 można sprawdzić działanie serwera w:
+- http://localhost:8080/JavaSoap/HelloWorldImplService  
+
+WSDL:
+- http://localhost:8080/JavaSoap/HelloWorldImplService?WSDL
+
+Tester Glassfisha:
+- http://localhost:8080/JavaSoap/HelloWorldImplService?Tester
+
+Przy włączonym serwerze można sprawdzić działanie klienta w pythonie znajdującego się w pythonClient.
 
 Wynik zadania 1 w cz.2  
 ![Alt text](screens/cz2zad1Wynik.png?raw=true "Wynik zad 1 z cz.2")
@@ -54,3 +66,13 @@ Wynik zadania 3 w cz.2
 Wynik zadania 6 w cz.2  
 ![Alt text](screens/cz2zad6Wynik.png?raw=true "Wynik zad 6 z cz.2")
 
+
+Część 3
+======
+W części 3 WSDL:
+- http://localhost:9999/ws/server?WSDL
+
+Wyniki zadań w cz.3
+![Alt text](screens/cz3zadaniaWynik.png?raw=true "Wynik wszystkich zadań z części 3")  
+Wyniki zadań w cz.3 w SoapUi  
+![Alt text](screens/cz3zadaniaWynikSoapUi.png?raw=true "Wynik wszystkich zadań z części 3")  

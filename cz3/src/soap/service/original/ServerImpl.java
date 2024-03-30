@@ -8,7 +8,7 @@ import javax.xml.ws.handler.MessageContext;
 import java.util.List;
 import java.util.Map;
 
-@WebService(endpointInterface = "soap.service.Server")
+@WebService(endpointInterface = "soap.service.original.Server")
 @HandlerChain(file= "getMacHandler.xml")
 public class ServerImpl implements Server {
     @Resource

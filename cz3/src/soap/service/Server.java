@@ -59,14 +59,14 @@ public interface Server {
      * @param arg0
      * @return
      *     returns java.lang.Double
-     * @throws SecretException_Exception
+     * @throws SecretException
      */
     @WebMethod
     @WebResult(targetNamespace = "")
     @RequestWrapper(localName = "calculator", targetNamespace = "http://service.soap/", className = "soap.service.Calculator")
     @ResponseWrapper(localName = "calculatorResponse", targetNamespace = "http://service.soap/", className = "soap.service.CalculatorResponse")
     @Action(input = "http://service.soap/Server/calculatorRequest", output = "http://service.soap/Server/calculatorResponse", fault = {
-        @FaultAction(className = SecretException_Exception.class, value = "http://service.soap/Server/calculator/Fault/SecretException")
+        @FaultAction(className = SecretException.class, value = "http://service.soap/Server/calculator/Fault/SecretException")
     })
     public Double calculator(
         @WebParam(name = "arg0", targetNamespace = "")
@@ -75,7 +75,7 @@ public interface Server {
         Double arg1,
         @WebParam(name = "arg2", targetNamespace = "")
         Double arg2)
-        throws SecretException_Exception
+        throws SecretException
     ;
 
 }

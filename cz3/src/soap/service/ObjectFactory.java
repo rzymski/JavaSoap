@@ -43,8 +43,8 @@ public class ObjectFactory {
      * Create an instance of {@link SecretException }
      * 
      */
-    public SecretException createSecretException() {
-        return new SecretException();
+    public SecretException createSecretException(String message) {
+        return new SecretException(message);
     }
 
     /**

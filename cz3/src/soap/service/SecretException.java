@@ -1,87 +1,28 @@
-
 package soap.service;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.ws.WebFault;
+
+@WebFault(name = "SecretException")
+public class SecretException extends Exception {
+
+    private static String explanation = "Ten kalkulator nie może mnożyć pi * ln, ponieważ tak wymyślił autor.";
 
 
-/**
- * <p>Java class for SecretException complex type.
- * 
- * <p>The following schema fragment specifies the expected content contained within this class.
- * 
- * <pre>
- * &lt;complexType name="SecretException">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="explanation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="message" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
- * </pre>
- * 
- * 
- */
-@XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "SecretException", propOrder = {
-    "explanation",
-    "message"
-})
-public class SecretException {
+    public SecretException(String message) {
+        super(message);
+    }
 
-    protected String explanation;
-    protected String message;
+    public SecretException(String message, String explanation) {
+        super(message);
+        this.explanation = explanation;
+    }
 
-    /**
-     * Gets the value of the explanation property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
+    public SecretException(String message, String explanation, Throwable cause) {
+        super(message, cause);
+        this.explanation = explanation;
+    }
+
     public String getExplanation() {
         return explanation;
     }
-
-    /**
-     * Sets the value of the explanation property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setExplanation(String value) {
-        this.explanation = value;
-    }
-
-    /**
-     * Gets the value of the message property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getMessage() {
-        return message;
-    }
-
-    /**
-     * Sets the value of the message property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setMessage(String value) {
-        this.message = value;
-    }
-
 }

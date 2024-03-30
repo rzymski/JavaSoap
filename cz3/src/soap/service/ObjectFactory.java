@@ -28,6 +28,7 @@ public class ObjectFactory {
     private final static QName _GetReverseMessage_QNAME = new QName("http://service.soap/", "getReverseMessage");
     private final static QName _GetServerName_QNAME = new QName("http://service.soap/", "getServerName");
     private final static QName _GetServerNameResponse_QNAME = new QName("http://service.soap/", "getServerNameResponse");
+    private final static QName _SecretException_QNAME = new QName("http://service.soap/", "SecretException");
     private final static QName _Calculator_QNAME = new QName("http://service.soap/", "calculator");
     private final static QName _CalculatorResponse_QNAME = new QName("http://service.soap/", "calculatorResponse");
 
@@ -36,6 +37,14 @@ public class ObjectFactory {
      * 
      */
     public ObjectFactory() {
+    }
+
+    /**
+     * Create an instance of {@link SecretException }
+     * 
+     */
+    public SecretException createSecretException() {
+        return new SecretException();
     }
 
     /**
@@ -120,6 +129,15 @@ public class ObjectFactory {
     @XmlElementDecl(namespace = "http://service.soap/", name = "getServerNameResponse")
     public JAXBElement<GetServerNameResponse> createGetServerNameResponse(GetServerNameResponse value) {
         return new JAXBElement<GetServerNameResponse>(_GetServerNameResponse_QNAME, GetServerNameResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link SecretException }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://service.soap/", name = "SecretException")
+    public JAXBElement<SecretException> createSecretException(SecretException value) {
+        return new JAXBElement<SecretException>(_SecretException_QNAME, SecretException.class, null, value);
     }
 
     /**

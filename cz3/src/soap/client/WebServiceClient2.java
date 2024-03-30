@@ -16,7 +16,8 @@ import soap.service.ServerImplService;
 import soap.handler.MacAddressInjectHandler;
 
 public class WebServiceClient2 {
-    private static final String WS_URL = "http://localhost:9999/ws/server";
+    // private static final String WS_URL = "http://localhost:8080/ws/server"; // przy użyciu SoapUi httpMonitor tunnel ustawionym na porcie 8080
+    private static final String WS_URL = "http://localhost:9999/ws/server"; // jeśli nie używamy SoaupUi
 
     public static void main(String[] args) throws Exception {
 //        URL url = new URL(WS_URL);

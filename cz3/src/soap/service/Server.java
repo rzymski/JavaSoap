@@ -7,6 +7,7 @@ import javax.jws.WebResult;
 import javax.jws.WebService;
 import javax.xml.bind.annotation.XmlSeeAlso;
 import javax.xml.ws.Action;
+import javax.xml.ws.FaultAction;
 import javax.xml.ws.RequestWrapper;
 import javax.xml.ws.ResponseWrapper;
 
@@ -23,6 +24,21 @@ import javax.xml.ws.ResponseWrapper;
 })
 public interface Server {
 
+
+    /**
+     * 
+     * @param arg0
+     * @return
+     *     returns java.lang.String
+     */
+    @WebMethod
+    @WebResult(targetNamespace = "")
+    @RequestWrapper(localName = "getReverseMessage", targetNamespace = "http://service.soap/", className = "soap.service.GetReverseMessage")
+    @ResponseWrapper(localName = "getReverseMessageResponse", targetNamespace = "http://service.soap/", className = "soap.service.GetReverseMessageResponse")
+    @Action(input = "http://service.soap/Server/getReverseMessageRequest", output = "http://service.soap/Server/getReverseMessageResponse")
+    public String getReverseMessage(
+        @WebParam(name = "arg0", targetNamespace = "")
+        String arg0);
 
     /**
      * 
@@ -43,33 +59,23 @@ public interface Server {
      * @param arg0
      * @return
      *     returns java.lang.Double
+     * @throws SecretException
      */
     @WebMethod
     @WebResult(targetNamespace = "")
     @RequestWrapper(localName = "calculator", targetNamespace = "http://service.soap/", className = "soap.service.Calculator")
     @ResponseWrapper(localName = "calculatorResponse", targetNamespace = "http://service.soap/", className = "soap.service.CalculatorResponse")
-    @Action(input = "http://service.soap/Server/calculatorRequest", output = "http://service.soap/Server/calculatorResponse")
+    @Action(input = "http://service.soap/Server/calculatorRequest", output = "http://service.soap/Server/calculatorResponse", fault = {
+        @FaultAction(className = SecretException.class, value = "http://service.soap/Server/calculator/Fault/SecretException")
+    })
     public Double calculator(
         @WebParam(name = "arg0", targetNamespace = "")
         String arg0,
         @WebParam(name = "arg1", targetNamespace = "")
         Double arg1,
         @WebParam(name = "arg2", targetNamespace = "")
-        Double arg2) throws SecretException;
-
-    /**
-     * 
-     * @param arg0
-     * @return
-     *     returns java.lang.String
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "getReverseMessage", targetNamespace = "http://service.soap/", className = "soap.service.GetReverseMessage")
-    @ResponseWrapper(localName = "getReverseMessageResponse", targetNamespace = "http://service.soap/", className = "soap.service.GetReverseMessageResponse")
-    @Action(input = "http://service.soap/Server/getReverseMessageRequest", output = "http://service.soap/Server/getReverseMessageResponse")
-    public String getReverseMessage(
-        @WebParam(name = "arg0", targetNamespace = "")
-        String arg0);
+        Double arg2)
+        throws SecretException
+    ;
 
 }

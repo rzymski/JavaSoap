@@ -1,5 +1,5 @@
 
-package soap.service;
+package soap.wizard.wsdl.classes;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

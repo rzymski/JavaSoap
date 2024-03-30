@@ -10,10 +10,12 @@ import javax.xml.ws.handler.PortInfo;
 import java.net.URL;
 import java.util.*;
 
-import soap.service.Server;
-import soap.service.ServerImplService;
 
 import soap.handler.MacAddressInjectHandler;
+import soap.wizard.wsdl.classes.Server;
+import soap.wizard.wsdl.classes.ServerImplService;
+
+
 
 public class WebServiceClient2 {
     // private static final String WS_URL = "http://localhost:8080/ws/server"; // przy użyciu SoapUi httpMonitor tunnel ustawionym na porcie 8080
@@ -67,7 +69,7 @@ public class WebServiceClient2 {
         headers.put("Password", Collections.singletonList("Trudne123!"));
         req_ctx.put(MessageContext.HTTP_REQUEST_HEADERS, headers);
         try {
-            System.out.println(server.calculator("/", 3.14, 2.71));
+            System.out.println(server.calculator("*", 3.15, 2.71));
         } catch (Exception e) {
             System.out.println("Wystąpił wyjątek: " + e.getMessage());
         }

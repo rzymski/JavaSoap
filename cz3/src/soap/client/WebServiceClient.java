@@ -1,7 +1,7 @@
 package soap.client;
 
-import soap.service.Server;
-import soap.service.ServerImplService;
+import soap.wizard.wsdl.classes.Server;
+import soap.wizard.wsdl.classes.ServerImplService;
 
 public class WebServiceClient {
     public static void main(String[] args) {

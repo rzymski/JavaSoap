@@ -1,5 +1,5 @@
 
-package soap.service;
+package soap.wizard.wsdl.classes;
 
 import javax.xml.bind.JAXBElement;
 import javax.xml.bind.annotation.XmlElementDecl;
@@ -10,7 +10,7 @@ import javax.xml.namespace.QName;
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
- * generated in the soap.service package. 
+ * generated in the soap.wizard.wsdl.classes package. 
  * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
@@ -33,7 +33,7 @@ public class ObjectFactory {
     private final static QName _CalculatorResponse_QNAME = new QName("http://service.soap/", "calculatorResponse");
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: soap.service
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: soap.wizard.wsdl.classes
      * 
      */
     public ObjectFactory() {
@@ -43,8 +43,8 @@ public class ObjectFactory {
      * Create an instance of {@link SecretException }
      * 
      */
-    public SecretException createSecretException(String message) {
-        return new SecretException(message);
+    public SecretException createSecretException() {
+        return new SecretException();
     }
 
     /**

@@ -1,4 +1,4 @@
-package soap.service;
+package soap.service.original;
 
 import javax.annotation.Resource;
 import javax.jws.HandlerChain;
@@ -39,7 +39,7 @@ public class ServerImpl implements Server {
     }
 
     @Override
-    public Double calculator(String operation, Double firstValue, Double secondValue) throws IllegalArgumentException, ArithmeticException, SecurityException, SecretException_Exception {
+    public Double calculator(String operation, Double firstValue, Double secondValue) throws IllegalArgumentException, ArithmeticException, SecurityException, SecretException {
         System.out.println("DZIALA dla: " + operation + " " + firstValue + " " + secondValue);
         if (authorization()){ System.out.println("Witaj! Zalogowano się prawidłowo."); }
         else {
@@ -59,7 +59,7 @@ public class ServerImpl implements Server {
         }
         if (operation.equals("*") && firstValue.equals(3.14) && secondValue.equals(2.71)) {
             System.out.println("ODKRYWCA");
-            throw new SecretException_Exception("Congratulation you discovered secret exception.");
+            throw new SecretException("Congratulation you discovered secret exception.");
         }
         switch (operation) {
             case "+":

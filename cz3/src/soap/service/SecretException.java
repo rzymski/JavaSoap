@@ -1,20 +1,87 @@
+
 package soap.service;
 
-public class SecretException extends Exception {
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlType;
 
-    public SecretException() {
-        super();
+
+/**
+ * <p>Java class for SecretException complex type.
+ * 
+ * <p>The following schema fragment specifies the expected content contained within this class.
+ * 
+ * <pre>
+ * &lt;complexType name="SecretException">
+ *   &lt;complexContent>
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+ *       &lt;sequence>
+ *         &lt;element name="explanation" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="message" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *       &lt;/sequence>
+ *     &lt;/restriction>
+ *   &lt;/complexContent>
+ * &lt;/complexType>
+ * </pre>
+ * 
+ * 
+ */
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlType(name = "SecretException", propOrder = {
+    "explanation",
+    "message"
+})
+public class SecretException {
+
+    protected String explanation;
+    protected String message;
+
+    /**
+     * Gets the value of the explanation property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getExplanation() {
+        return explanation;
     }
 
-    public SecretException(String message) {
-        super(message);
+    /**
+     * Sets the value of the explanation property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setExplanation(String value) {
+        this.explanation = value;
     }
 
-    public SecretException(String message, Throwable cause) {
-        super(message, cause);
+    /**
+     * Gets the value of the message property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getMessage() {
+        return message;
     }
 
-    public SecretException(Throwable cause) {
-        super(cause);
+    /**
+     * Sets the value of the message property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setMessage(String value) {
+        this.message = value;
     }
+
 }

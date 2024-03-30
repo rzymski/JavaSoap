@@ -19,7 +19,7 @@ import javax.xml.ws.WebServiceFeature;
  * 
  */
 @WebServiceClient(name = "ServerImplService", targetNamespace = "http://service.soap/", wsdlLocation = "http://localhost:9999/ws/server?wsdl")
-@HandlerChain(file ="setMacHandler.xml")
+@HandlerChain(file = "setMacHandler.xml")
 public class ServerImplService
     extends Service
 {

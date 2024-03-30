@@ -76,3 +76,9 @@ Wyniki zadań w cz.3
 ![Alt text](screens/cz3zadaniaWynik.png?raw=true "Wynik wszystkich zadań z części 3")  
 Wyniki zadań w cz.3 w SoapUi  
 ![Alt text](screens/cz3zadaniaWynikSoapUi.png?raw=true "Wynik wszystkich zadań z części 3")  
+
+Konfiguracja HTTP monitora:  
+![Alt text](screens/cz3MonitorKonfiguracja1.png?raw=true "Konfiguracja monitora Http1")
+![Alt text](screens/cz3MonitorKonfiguracja2.png?raw=true "Konfiguracja monitora Http2")  
+Działanie HTTP monitora:
+![Alt text](screens/cz3Monitor.png?raw=true "Konfiguracja monitora Http1")  

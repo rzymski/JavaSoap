@@ -80,6 +80,12 @@ Wyniki zadań w cz.3 w SoapUi
 Konfiguracja HTTP monitora:  
 ![Alt text](screens/cz3MonitorKonfiguracja1.jpg?raw=true "Konfiguracja monitora Http1")
 ![Alt text](screens/cz3MonitorKonfiguracja2.png?raw=true "Konfiguracja monitora Http2")  
+
+W celu sprawdzenia działania programu przez SoapUi w programie też trzeba zmienić port  
+&ensp;Przykładowo w **WebServiceClient2.java** trzeba wybrać w 21-22 linijce docelowy port:  
+&emsp;private static final String WS_URL = "http://localhost:9999/ws/server"; // jeśli nie używamy SoaupUi  
+&emsp;private static final String WS_URL = "http://localhost:8080/ws/server"; // przy użyciu SoapUi httpMonitor tunnel ustawionym na porcie 8080  
+
 Działanie HTTP monitora:
 ![Alt text](screens/cz3Monitor.png?raw=true "Konfiguracja monitora Http1")  
 

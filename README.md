@@ -5,6 +5,7 @@ ___
 W cz1 znajdują się zadania z JAXWS.pdf oraz 2 zadanie z JAXWScz2.pdf w folderze lavasoft  
 W cz2 znajdują się zadania z JAXWScz2.pdf (z wyjątkime 2)  
 W cz3 znajdują się zadania z JAXWScz3.pdf
+W cz4 znajduje się zadanie 1 z JAXWScz4.pdf
 
 W cz2 w celu wdrożenia aplikacji na serwer glassfish wykorzystano Inteliji premium.  
 Integracja z Maven:
@@ -75,7 +76,10 @@ W części 3 WSDL:
 Wyniki zadań w cz.3
 ![Alt text](screens/cz3zadaniaWynik.png?raw=true "Wynik wszystkich zadań z części 3")  
 Wyniki zadań w cz.3 w SoapUi  
-![Alt text](screens/cz3zadaniaWynikSoapUi.png?raw=true "Wynik wszystkich zadań z części 3")  
+![Alt text](screens/cz3zadaniaWynikSoapUi.png?raw=true "Wynik wszystkich zadań z części 3")
+
+Generowanie klas z WSDL za pomocą wizard-a w Intellij-i (wymaga pluginu Jakarta EE: Web Services (JAX-WS)):  
+![Alt text](screens/intelijiWizardGenerateWSDLClasses.jpg?raw=true "Wykorzystanie wizard-a w Intellij-i do wygenerowawania klas z WSDL ")
 
 Konfiguracja HTTP monitora:  
 ![Alt text](screens/cz3MonitorKonfiguracja1.jpg?raw=true "Konfiguracja monitora Http1")
@@ -89,9 +93,6 @@ W celu sprawdzenia działania programu przez SoapUi w programie też trzeba zmie
 Działanie HTTP monitora:
 ![Alt text](screens/cz3Monitor.png?raw=true "Konfiguracja monitora Http1")  
 
-Generowanie klas z WSDL za pomocą wizard-a w Intellij-i (wymaga pluginu Jakarta EE: Web Services (JAX-WS)):  
-![Alt text](screens/intelijiWizardGenerateWSDLClasses.jpg?raw=true "Wykorzystanie wizard-a w Intellij-i do wygenerowawania klas z WSDL ")
-
 
 Część 4
 ======
@@ -99,4 +100,6 @@ W części 4 WSDL:
 - http://localhost:9999/ws/server?WSDL
 
 Wynik zadania 1 w cz.4
-![Alt text](screens/cz4zad1Wynik.png?raw=true "Wynik zadania 1 z części 4")
+![Alt text](screens/cz4zad1Wynik.png?raw=true "Wynik zadania 1 z części 4")  
+Testowanie zadania 1 przez SoaupUi requesty:
+![Alt text](screens/cz4zad1SoapUiRequests.png?raw=true "Testowanie zadania 1 przez SoaupUi requesty")  

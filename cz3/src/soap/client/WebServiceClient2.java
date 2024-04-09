@@ -74,7 +74,7 @@ public class WebServiceClient2 {
 
         // wywołanie kalkulatora
         try {
-            System.out.println(server.calculator("/", 3.14, 0.0));
+            System.out.println(server.calculator("*", 3.15, 2.71));
         } catch (Exception e) {
             System.out.println("Wystąpił wyjątek: " + e.getMessage());
         }

@@ -4,7 +4,7 @@ ___
 # JavaSoap
 W cz1 znajdują się zadania z JAXWS.pdf oraz 2 zadanie z JAXWScz2.pdf w folderze lavasoft  
 W cz2 znajdują się zadania z JAXWScz2.pdf (z wyjątkime 2)  
-W cz3 znajdują się zadania z JAXWScz3.pdf
+W cz3 znajdują się zadania z JAXWScz3.pdf  
 W cz4 znajduje się zadanie 1 z JAXWScz4.pdf
 
 W cz2 w celu wdrożenia aplikacji na serwer glassfish wykorzystano Inteliji premium.  
@@ -101,5 +101,6 @@ W części 4 WSDL:
 
 Wynik zadania 1 w cz.4
 ![Alt text](screens/cz4zad1Wynik.png?raw=true "Wynik zadania 1 z części 4")  
+
 Testowanie zadania 1 przez SoaupUi requesty:
 ![Alt text](screens/cz4zad1SoapUiRequests.png?raw=true "Testowanie zadania 1 przez SoaupUi requesty")  

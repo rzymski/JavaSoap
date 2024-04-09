@@ -82,3 +82,15 @@ Konfiguracja HTTP monitora:
 ![Alt text](screens/cz3MonitorKonfiguracja2.png?raw=true "Konfiguracja monitora Http2")  
 Działanie HTTP monitora:
 ![Alt text](screens/cz3Monitor.png?raw=true "Konfiguracja monitora Http1")  
+
+Generowanie klas z WSDL za pomocą wizard-a w Intellij-i (wymaga pluginu Jakarta EE: Web Services (JAX-WS)):  
+![Alt text](screens/intelijiWizardGenerateWSDLClasses.jpg?raw=true "Wykorzystanie wizard-a w Intellij-i do wygenerowawania klas z WSDL ")
+
+
+Część 4
+======
+W części 4 WSDL:
+- http://localhost:9999/ws/server?WSDL
+
+Wynik zadania 1 w cz.4
+![Alt text](screens/cz4zad1Wynik.png?raw=true "Wynik zadania 1 z części 4")

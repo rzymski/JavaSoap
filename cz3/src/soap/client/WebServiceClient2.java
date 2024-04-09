@@ -59,17 +59,22 @@ public class WebServiceClient2 {
         ServerImplService serverService = new ServerImplService();
         Server server = serverService.getServerImplPort();
 
+        // wywołanie metody zwracającej nazwe serwera
         System.out.println("Nazwa serwera = " + server.getServerName());
 
+        // ustawienie przekierowania (wykorzystywane przy testowaniu przez SoapUi)
         Map<String, Object> req_ctx = ((BindingProvider)server).getRequestContext();
         req_ctx.put(BindingProvider.ENDPOINT_ADDRESS_PROPERTY, WS_URL);
 
+        // dodanie nazwy użytkownika i hasła do nagłówka
         Map<String, List<String>> headers = new HashMap<String, List<String>>();
         headers.put("Username", Collections.singletonList("pizza"));
         headers.put("Password", Collections.singletonList("Trudne123!"));
         req_ctx.put(MessageContext.HTTP_REQUEST_HEADERS, headers);
+
+        // wywołanie kalkulatora
         try {
-            System.out.println(server.calculator("*", 3.15, 2.71));
+            System.out.println(server.calculator("/", 3.14, 0.0));
         } catch (Exception e) {
             System.out.println("Wystąpił wyjątek: " + e.getMessage());
         }

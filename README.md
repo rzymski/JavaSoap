@@ -96,11 +96,20 @@ Działanie HTTP monitora:
 
 Część 4
 ======
-W części 4 WSDL:
+Zad 1 WSDL:
 - http://localhost:9999/ws/server?WSDL
 
-Wynik zadania 1 w cz.4
+Wynik zadania 1 w cz.4  
 ![Alt text](screens/cz4zad1Wynik.png?raw=true "Wynik zadania 1 z części 4")  
 
 Testowanie zadania 1 przez SoaupUi requesty:
 ![Alt text](screens/cz4zad1SoapUiRequests.png?raw=true "Testowanie zadania 1 przez SoaupUi requesty")  
+
+Zad 2 korzysta z serwera Glassfish stworzonego w 2 zadaniu oraz klienta w cz4 WSSSLClient.Java oraz klas z soap.glassfish.client     
+
+BASIC AUTHENTICATION BEZ SSL:
+ - Wynik zadania 2 w cz.4 przy użyciu klienta z w cz4
+![Alt text](screens/cz4zad2Klient.png?raw=true "Wynik zadania 2 w cz.4 przy użyciu klienta z w cz4")  
+
+ - Wynik zadania 2 w cz.4 przy użyciu SoapUi  
+![Alt text](screens/cz4zad2SoapUI.png?raw=true "Wynik zadania 2 w cz.4 przy użyciu SoapUi") 

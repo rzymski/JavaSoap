@@ -18,6 +18,10 @@
             <li>
                 <a href="http://localhost:8080/JavaSoap/HelloWorldImplService?Tester">Tester Glassfisha</a>
             </li>
+            <br>
+            <li>
+                <a href="http://localhost:4848">Panel administracyjny glassfish-a</a>
+            </li>
         </ul>
         <br/>
         <a href="simple-servlet">Odnosnik do Servletu</a>

@@ -8,7 +8,7 @@ import java.util.List;
 public class HelloWorldImpl implements HelloWorld {
     @Override
     public String getHelloWorldAsString(String name) {
-        return "Witaj świecie JAX-WS: " + name;
+        return "Serwer zwraca wiadomosc od klienta: " + name;
     }
 
     @Override

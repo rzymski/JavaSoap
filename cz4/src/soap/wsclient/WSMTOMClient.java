@@ -1,4 +1,4 @@
-package soap.client;
+package soap.wsclient;
 
 import soap.wizard.wsdl.classes.Server;
 import soap.wizard.wsdl.classes.ServerImplService;

@@ -21,7 +21,7 @@ public class ServerImpl implements Server {
     @Override
     public Image downloadImage(String fileName) {
         try{
-            File image = new File("D:\\programowanie\\java\\rsi\\JavaSoap\\screens\\" + fileName);
+            File image = new File("D:\\programowanie\\java\\rsi\\soap\\JavaSoap\\screens\\" + fileName);
             return ImageIO.read(image);
         } catch (IOException e) {
             e.printStackTrace();
